@@ -12,7 +12,7 @@ function List({ initialItems }: ListProps) {
     setList((state) => [...state, newItem]);
   }
 
-  function removeToList(key) {
+  function removeToList(key: string) {
     setList(list.filter((item) => item !== key));
   }
 
